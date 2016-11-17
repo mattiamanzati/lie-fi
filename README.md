@@ -2,7 +2,7 @@
 A command line util to locally test NodeJS web apps with Lie-Fi and bad connection quality!
 This utility comes in handy when developing offline-first web applications!
 
-![Install and using Lie-Fi](https://raw.githubusercontent.com/mattiamanzati/lie-fi/masted/docs/sample-install.gif)
+![Install and using Lie-Fi](https://raw.githubusercontent.com/mattiamanzati/lie-fi/master/docs/sample-install.gif)
 
 ## Usage
 First install the package globally using `npm install lie-fi -g` in the terminal and then browse your application folder and type in the terminal:
