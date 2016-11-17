@@ -1,0 +1,42 @@
+{
+  "name": "lie-fi",
+  "version": "0.1.0",
+  "description": "A command line util to locally test NodeJS web apps with Lie-Fi and bad connection quality!",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "prepublish": "npm run build"
+  },
+  "bin": {
+    "lie-fi": "lib/bin.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattiamanzati/lie-fi.git"
+  },
+  "keywords": [
+    "lie-fi",
+    "offline-first",
+    "express",
+    "http",
+    "mobile"
+  ],
+  "author": "Mattia Manzati",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mattiamanzati/lie-fi/issues"
+  },
+  "homepage": "https://github.com/mattiamanzati/lie-fi#readme",
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "throttle": "^1.0.3"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0"
+  }
+}
