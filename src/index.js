@@ -67,7 +67,7 @@ export function createLieFiServer(port, appServer){
         // make listen the wrapper server
         serverUp = true
         exposedServer.listen(port, _ => {
-            console.log("Server listening at localhost:" + port);
+            //console.log("Server listening at localhost:" + port);
         })
 
         // ensure the real server is up
@@ -82,6 +82,13 @@ export function createLieFiServer(port, appServer){
     const setConnectionType = type => {
         // set the new connection type
         if(type === connectionType) return
+
+        // check the connection type exists
+        if(Object.keys(connectionTypes).indexOf(type) === -1){
+            throw 'Connection type must be one of ', Object.keys(connectionTypes).join(', ')
+        }
+
+        // set the connection type
         connectionType = type
 
         // destroy live connections
